@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get("/forex", { :controller => "currency", :action => "first_currency" })
   get("/forex/:base_currency", { :controller => "currency", :action => "convert_to_selection" })
-  get("/forex/:base_currency", { :controller => "currency", :action => "convert_to_selection" })
+  get("/forex/:base_currency/:translated_currency", { :controller => "currency", :action => "final_conversion" })
 
 
 end

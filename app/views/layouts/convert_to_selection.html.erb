@@ -1,12 +1,12 @@
-<h1> Concert <%=@b_currency%> </h1>
+<h1> Convert <%=@b_currency%> </h1>
 
 <p> Go <a href="/forex"> back </a>.<p>
 <ul>
 
   <% @array_of_symbols.each do |a_symbol| %>
     <li>
-      <a href="/forex/<%= @b_currency %><%= a_symbol %>">
-        Convert 1 <%= @b_currency %> to <%= a_symbol%> to...
+      <a href="/forex/<%= @b_currency %>/<%= a_symbol %>">
+        Convert 1 <%= @b_currency %> to <%= a_symbol%> ...
       </a>
     </li>
   <% end %>
